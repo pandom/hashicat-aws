@@ -26,6 +26,8 @@ resource "aws_vpc" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-vpc"
+    TTL = "24"
+    Owner = "burkey"
   }
 }
 
@@ -35,6 +37,8 @@ resource "aws_subnet" "hashicat" {
 
   tags = {
     name = "${var.prefix}-subnet"
+    TTL = "24"
+    Owner = "burkey"
   }
 }
 
@@ -74,6 +78,8 @@ resource "aws_security_group" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-security-group"
+    TTL = "24"
+    Owner = "burkey"
   }
 }
 
@@ -101,6 +107,8 @@ resource "aws_eip" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-elastic-ip"
+    TTL = "24"
+    Owner = "burkey"
   }
 }
 
@@ -109,6 +117,8 @@ resource "aws_internet_gateway" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-internet-gateway"
+    TTL = "24"
+    Owner = "burkey"
   }
 }
 
@@ -153,6 +163,8 @@ resource "aws_instance" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
+    TTL = "24"
+    Owner = "burkey"
   }
 }
 
