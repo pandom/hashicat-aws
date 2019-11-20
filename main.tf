@@ -26,8 +26,8 @@ resource "aws_vpc" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-vpc"
-    TTL = "24"
-    Owner = "burkey"
+    # TTL = "24"
+    # Owner = "burkey"
   }
 }
 
@@ -37,8 +37,8 @@ resource "aws_subnet" "hashicat" {
 
   tags = {
     name = "${var.prefix}-subnet"
-    TTL = "24"
-    Owner = "burkey"
+    # TTL = "24"
+    # Owner = "burkey"
   }
 }
 
@@ -117,8 +117,8 @@ resource "aws_internet_gateway" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-internet-gateway"
-    TTL = "24"
-    Owner = "burkey"
+    # TTL = "24"
+    # Owner = "burkey"
   }
 }
 
