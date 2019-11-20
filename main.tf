@@ -107,8 +107,8 @@ resource "aws_eip" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-elastic-ip"
-    TTL = "24"
-    Owner = "burkey"
+    # TTL = "24"
+    # Owner = "burkey"
   }
 }
 
